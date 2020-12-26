@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.UserRegistrationScreen">
+
+    <ImageView
+        android:id="@+id/back_btn_to_user_registration"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/tv_registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Hi, what do your\n friends call you?"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back_btn_to_user_registration"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textColor="#333"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Paul jacobson"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toBottomOf="@id/tv_registration"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:textStyle="bold"
+        android:textColor="#333"
+        android:layout_marginTop="30dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        app:cornerRadius="40dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"
+        app:strokeWidth="1dp"
+        android:textColor="#333"
+        app:strokeColor="#333"
+        android:text="Continue"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_username"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        style="?attr/materialButtonOutlinedStyle"
+        />
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
